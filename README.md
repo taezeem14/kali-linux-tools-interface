@@ -52,7 +52,7 @@ This is the fastest way. The `setup.sh` script installs all dependencies, create
 
 ```bash
 # 1. Download / clone the repository
-git clone https://github.com/YOUR_USERNAME/kali-linux-tools-interface.git
+git clone https://github.com/taezeem14/kali-linux-tools-interface.git
 cd kali-linux-tools-interface
 
 # 2. Run the installer as root
@@ -128,7 +128,7 @@ Or if you cloned directly into the web root:
 
 ```bash
 cd /var/www/html
-sudo git clone https://github.com/YOUR_USERNAME/kali-linux-tools-interface.git kali-tools
+sudo git clone https://github.com/taezeem14/kali-linux-tools-interface.git kali-tools
 ```
 
 #### Step 6 — Configure Database Credentials
