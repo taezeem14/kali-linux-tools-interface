@@ -1,0 +1,121 @@
+/* ==========================================================
+   Kali Tools Interface v3.0 - Custom Styles
+   Modern dark theme optimized for security professionals
+   ========================================================== */
+
+:root {
+  --kali-dark: #1a1a2e;
+  --kali-mid: #16213e;
+  --kali-accent: #0f3460;
+  --kali-highlight: #e94560;
+  --kali-success: #28a745;
+  --kali-terminal: #0a0a0a;
+  --kali-text: #e0e0e0;
+}
+
+/* Base overrides */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.card {
+  margin-bottom: 1.0em;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn {
+  margin: 5px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+/* Hover effects */
+.zoom-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.zoom-effect:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.15);
+}
+
+/* Terminal iframe */
+.iframe-terminal {
+  width: 100%;
+  height: 600px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background: var(--kali-terminal);
+}
+
+/* Filter buttons */
+.filter-button {
+  margin: 3px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  padding: 6px 16px;
+  transition: all 0.2s ease;
+}
+
+.filter-button:hover {
+  transform: scale(1.05);
+}
+
+/* Terminal output styling */
+textarea[readonly] {
+  background: var(--kali-terminal) !important;
+  color: #0f0 !important;
+  font-family: 'Fira Code', 'Cascadia Code', 'JetBrains Mono', monospace !important;
+  font-size: 13px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 15px;
+  resize: vertical;
+}
+
+/* Card stats spacing */
+.card-stats .card-body {
+  padding: 1.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .iframe-terminal {
+    height: 400px;
+  }
+}
+
+/* Status badges */
+.badge-available {
+  background: var(--kali-success);
+  color: white;
+}
+
+.badge-unavailable {
+  background: #6c757d;
+  color: white;
+}
+
+/* Header background override */
+.header {
+  background: linear-gradient(135deg, var(--kali-dark), var(--kali-accent)) !important;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
